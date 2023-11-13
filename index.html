@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const typed = document.querySelector(".typed");
+        if (typed) {
+          let typed_strings = typed.getAttribute("data-typed-items");
+          typed_strings = typed_strings.split(",");
+          new Typed(".typed", {
+            strings: typed_strings,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,
+          });
+        }
+      });
+    </script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -41,8 +58,13 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Goh Jia Ean</h1>
+        <p class="section__text__p2">
+          <span
+            class="typed"
+            data-typed-items="Data Analyst, Data Scientist, Freelancer, Web developer, Volunteer"
+          ></span>
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
