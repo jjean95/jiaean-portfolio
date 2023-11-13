@@ -4,6 +4,7 @@
   --navi-color: #000000;
   --font-color: #ffffff;
   --grey-color: rgb(85, 85, 85);
+  --purple-color: #9b94f2;
 }
 
 * {
@@ -312,4 +313,55 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/*EXPERIENCE*/
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+.details-container-2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: var(--purple-color);
+  border-radius: 2rem;
+  border-color: var(--purple-color);
+  text-align: center;
+}
+
+h3 {
+  color: var(--font-color);
 }
