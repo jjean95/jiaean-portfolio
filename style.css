@@ -342,7 +342,7 @@ section {
   justify-content: space-around;
 }
 
-.article {
+article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
@@ -358,10 +358,38 @@ article .icon {
   flex: 1;
   background: var(--purple-color);
   border-radius: 2rem;
+  border: var(--purple-color) 0.1rem solid;
   border-color: var(--purple-color);
   text-align: center;
 }
 
 h3 {
   color: var(--font-color);
+  font-size: 1.17em;
+}
+
+/*PROJECTS*/
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: var(--navi-color);
+  background: var(--font-color);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: var(--navi-color);
+}
+
+.project-btn {
+  color: var(--navi-color);
+  border-color: var(--navi-color);
 }
