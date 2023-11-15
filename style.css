@@ -302,13 +302,16 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: var(--font-color);
+  background: var(--purple-color);
   border-radius: 2rem;
-  border: var(--navi-color) 0.1rem solid;
-  border-color: var(--navi-color);
+  border: var(--purple-color) 0.1rem solid;
+  border-color: var(--purple-color);
   text-align: center;
 }
 
+.details-container p {
+  color: #f4f4f4;
+}
 .section-container {
   gap: 4rem;
   height: 80%;
