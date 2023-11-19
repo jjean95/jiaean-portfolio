@@ -31,3 +31,8 @@ for (let i = 0; i < list.length; i++) {
     }
   });
 }
+
+let exampleBtn = document.getElementsById("open-btn");
+exampleBtn.addEventListener("click", () => {
+  window.open("https://example.com", "_blank");
+});
