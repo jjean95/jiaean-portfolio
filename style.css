@@ -348,9 +348,11 @@ section {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
 .exp li {
   list-style: none;
-  background: #eee;
+  background: var(--font-color);
+  border: var(--navi-color) 0.1rem solid;
   padding: 12px 20px;
   margin: 5px;
   letter-spacing: 1px;
@@ -360,6 +362,7 @@ section {
 .exp li.active {
   background: var(--purple-color);
   color: var(--font-color);
+  border: var(--purple-color) 0.1rem solid;
 }
 
 .article-container {
