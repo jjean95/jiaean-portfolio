@@ -339,13 +339,9 @@ section {
 }
 
 .experience-details-container {
-  padding: 20px;
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin: auto;
 }
 
 .exp {
@@ -393,7 +389,8 @@ article .icon {
 }
 
 .details-container-2 {
-  padding: 4rem;
+  padding: 1.5rem;
+  flex: 1;
   background: var(--purple-color);
   border-radius: 2rem;
   border: var(--purple-color) 0.1rem solid;
@@ -401,10 +398,9 @@ article .icon {
   text-align: center;
 }
 
-.itemBox.details-container-2.hide {
+.details-container-2.hide {
   display: none;
 }
-
 h3 {
   color: var(--font-color);
   font-size: 1.17em;
@@ -415,26 +411,6 @@ h3 {
   position: relative;
 }
 
-.project-containers:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.project-containers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.project-containers .itemBox {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  display: block;
-}
 .color-container {
   border-color: var(--navi-color);
   background: var(--font-color);
@@ -442,8 +418,8 @@ h3 {
 
 .project-img {
   border-radius: 2rem;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {
