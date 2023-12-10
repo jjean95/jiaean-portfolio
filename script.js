@@ -32,7 +32,39 @@ for (let i = 0; i < list.length; i++) {
   });
 }
 
-let exampleBtn = document.getElementsById("open-btn");
-exampleBtn.addEventListener("click", () => {
-  window.open("https://example.com", "_blank");
+document.addEventListener("DOMContentLoaded", function () {
+  let exampleBtn = document.getElementById("project-btn");
+  exampleBtn.addEventListener("click", () => {
+    window.open("https://example.com", "_blank");
+  });
+});
+
+//scroll to top
+document.addEventListener("DOMContentLoaded", function () {
+  let mybutton = document.getElementById("arrowup");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.removeAttribute("hidden");
+      mybutton.style.opacity = "1";
+    } else {
+      mybutton.setAttribute("hidden", true);
+      mybutton.style.opacity = "0";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  // Set up event listener for the button click
+  mybutton.addEventListener("click", topFunction);
 });
