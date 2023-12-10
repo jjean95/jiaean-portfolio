@@ -32,12 +32,14 @@ for (let i = 0; i < list.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  let exampleBtn = document.getElementById("project-btn");
+function setupEventListeners() {
+  let exampleBtn = document.getElementsByClassName("project-btn")[0];
   exampleBtn.addEventListener("click", () => {
     window.open("https://example.com", "_blank");
   });
-});
+}
+
+document.addEventListener("DOMContentLoaded", setupEventListeners);
 
 //scroll to top
 document.addEventListener("DOMContentLoaded", function () {
